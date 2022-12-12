@@ -1,0 +1,11 @@
+// text content nest
+
+section.text-content {
+    @include flex(column, center, center);
+    background-color: $very-light-green;
+    text-align: center;
+    padding: $xxl $m;
+        div {
+            max-width: $max;
+        }
+}

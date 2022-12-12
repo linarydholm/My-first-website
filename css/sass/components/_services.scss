@@ -1,0 +1,51 @@
+// services nest
+
+section.services {
+    margin: $m;
+    div.service-grid {
+        @include grid(336px, repeat(5, 1fr), $m, $m);
+        @include flex(column, center,center);
+        margin: 0 auto;
+        max-width: $bigmax;
+        @include tablet {
+            @include grid(repeat(2, 336px), repeat(3, 1fr), $m, $m);
+        }
+        @include desktop {
+            @include grid(repeat(3, 336px), repeat(2, 1fr), $m, $m);
+        }
+            article.service-item {
+                padding: $s;
+                margin: auto;
+                box-shadow: $grey-shadow;
+                border-radius: 5px;
+                min-width: 312px;
+                max-width: 312px;
+                width: calc(100% - $m);
+                    div.service-img {
+                        width: 100%;
+                        height: 300px;
+                        border-radius: 5px;
+                    }
+                    &:first-of-type div.service-img {
+                        @include img-bg(url(../../../img/stockphotos/wrap.jpg));
+                    }
+                    &:nth-of-type(2) div.service-img {
+                        @include img-bg(url(../../../img/stockphotos/decorate.jpg));
+                    }
+                    &:nth-of-type(3) div.service-img {
+                        @include img-bg(url(../../../img/stockphotos/giftshop.jpg));
+                    }
+                    &:nth-of-type(4) div.service-img {
+                        @include img-bg(url(../../../img/stockphotos/dinner.jpg));
+                    }
+                    &:last-of-type div.service-img {
+                        @include img-bg(url(../../../img/stockphotos/cleaning.jpg));
+                    }
+
+                div.service-text {
+                    margin: $s;
+                    text-align: center;
+                }
+            }
+    }
+}

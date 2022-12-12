@@ -1,0 +1,40 @@
+// review grid nest
+
+section.review-grid {
+    @include grid(1fr, auto, $m, $m);
+    margin: 0 $m $m $m;
+    @include tablet {
+        @include grid(repeat(2,1fr), auto, $m, $m);
+    }
+    @include laptop {
+        @include grid(repeat(3,1fr), auto, $m, $m);
+        max-width: $bigmax;
+        margin: 0 auto $m auto;
+        padding: 0 $m;
+    }
+        article.review-item {
+            @include grid(repeat(2,1fr), $ml auto);
+            box-shadow: $grey-shadow;
+            border-radius: 5px;
+            padding: $s;
+            div {
+                &:first-of-type {
+                    font-weight: 600;
+                }
+                &:nth-of-type(2) {
+                    text-align: right;
+                        .fa-star {
+                            color: $light-green;
+                        }
+                }
+                &:last-of-type {
+                    grid-area: 2/1/3/3;
+                    font-size: 0.9em;
+                }
+            }
+        }
+}
+
+.box {
+    height: 50px;
+}

@@ -1,0 +1,26 @@
+// banner nest
+
+section.hero-banner {
+    @include flex(row, center, center);
+    @include position(relative);
+    @include img-bg(url(../../../img/stockphotos/banner.jpg));
+    height: $banner-height;
+        div.banner-text {
+            @include flex(column, center, center);
+            @include position(absolute);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.6);
+                h1 {
+                    font-size: 2.2em;
+                    color: $light-text;
+                    margin-left: $sm;
+                    margin-right: $sm;
+                }
+                p {
+                    color: $light-text;
+                }
+        }
+}

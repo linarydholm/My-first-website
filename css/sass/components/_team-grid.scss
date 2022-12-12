@@ -1,0 +1,76 @@
+// team-grid nest
+
+section.dream-team {
+    margin: auto;
+        h2 {
+            margin-bottom: $m;
+        }
+        div.team-grid {
+            @include grid(auto, auto, $m, $m);
+            margin: $m;
+            @include tablet {
+                @include grid(repeat(2, 1fr), repeat(3,auto), $m, $m);
+            }
+            @include desktop {
+                @include grid(repeat(2, 1fr), repeat(3,auto), $ml, $ml);
+                margin: $ml;
+            }
+                article.elf-item {
+                    @include grid(auto, repeat(2, auto));
+                    background-color: $very-light-green;
+                    box-shadow: $grey-shadow;
+                    @include desktop {
+                        @include grid(262px auto, auto);
+                    }
+                        &:first-of-type .elf-portrait {
+                            @include img-bg(url(../../../img/stockphotos/santa.jpg));                        
+                        }
+                        &:nth-of-type(2) .elf-portrait{
+                            @include img-bg(url(../../../img/stockphotos/elfie.jpg));
+                        }
+                        &:nth-of-type(3) .elf-portrait {
+                            @include img-bg(url(../../../img/stockphotos/elfwald.jpg));
+                        }
+                        &:nth-of-type(4) .elf-portrait {
+                            @include img-bg(url(../../../img/stockphotos/gandelf.jpg));
+                        }
+                        &:nth-of-type(5) .elf-portrait {
+                            @include img-bg(url(../../../img/stockphotos/elfa.jpg));
+                        }
+                        &:last-of-type .elf-portrait {
+                            @include img-bg(url(../../../img/stockphotos/rudelf.jpg));
+                        }
+                        div.elf-portrait {
+                            height: 250px;
+                            width: 250px;
+                            border-radius: 125px;
+                            margin: $m auto $s auto;
+                            @include desktop {
+                                margin: $s;
+                            }
+                        }
+                }
+                div.elf-description { 
+                    @include flex(column, center, center);
+                    div {
+                        margin: $s;
+                            h3 {
+                                margin-bottom: 0;
+                            }
+                            h4 {
+                                font-size: 1.6em;
+                            }
+                            p {
+                                text-align: center;
+                            }
+                            p:first-of-type {
+                                margin: $m;
+                                font-size: 0.8em;
+                            }
+                            p:last-of-type {
+                                font-weight: 500;
+                            }
+                    }
+                }
+        }
+}

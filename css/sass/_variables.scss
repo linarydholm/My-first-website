@@ -1,0 +1,60 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Pen+Script&display=swap');
+
+// variables
+
+// breakpoints (min-width)
+$mobile: 0px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1400px;
+
+// colors
+$very-dark-green: #021700;
+$dark-green: #042001;
+$light-green: #35402f;
+$very-light-green: #F7F9F2;
+
+$light-bulb: #fff9d2;
+$nice-brown: #0D0A09;
+$dark-red: #450200;
+
+$dark-text: #292929;
+$light-text: #ffffff;
+
+// padding & margin
+$base: 4px;
+
+$xxs: $base;                // 4px
+$xs: calc($base * 2);       // 8px
+$s: calc($base * 3);        // 12px
+$sm: calc($base * 4);       // 16px
+$m: calc($base * 6);        // 24px
+$ml: calc($base * 9);       // 36px
+$l: calc($base * 12);       // 48px
+$xl: calc($base * 14);      // 56px
+$xxl: calc($base * 18);     // 72px
+$xxxl: calc($base * 24);    // 96px
+$xxxxl: calc($base * 28);   // 112px
+
+// width
+$max: 900px;
+$bigmax: 1200px;
+
+// shadow
+$dark-shadow: 0px 0px 8px 0px rgb(0, 0, 0);
+$grey-shadow: 0px 0px 8px 0px rgb(195, 195, 195);
+$light-shadow: 0px 0px 8px 0px rgb(255, 245, 182);
+$bulb-shadow: 0px 0px 8px 0px rgb(255, 245, 182);
+
+// transition
+$transition: .5s;
+$fast-transition: .25s;
+
+// header
+$announcement-height: 32px;
+$header-height: 112px;
+$nav-height: 48px;
+
+// hero banner
+$banner-height: calc(100vh - ($announcement-height + $header-height + $nav-height));

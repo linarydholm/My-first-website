@@ -1,0 +1,34 @@
+// review button nest
+
+section.review-header {
+    padding: 0 $m $m $m ;
+        div.random {
+            @include flex(column,center,center);
+            background-color: $very-light-green;
+            max-width: $bigmax;
+            margin: 0 auto;
+            @include tablet {
+                @include flex(row, space-between, center);
+            }
+            
+                div.stardusts {
+                    @include flex(column,center,center);
+                    padding: $s;
+                    @include tablet {
+                        @include flex(column, center, flex-start);
+                    }
+                    div.stars {
+                        @include flex(row, center, center);
+                        font-size: 1.6em;
+                        color: $light-green;
+                    }
+                    p {
+                        margin: $xs 0 0 0;
+                        font-weight: 600;
+                    }
+                }
+                button {
+                    margin: $s;
+                }
+        }
+}

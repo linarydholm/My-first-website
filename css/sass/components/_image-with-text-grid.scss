@@ -1,0 +1,19 @@
+// image with text nest
+
+section.image-with-text-grid {
+    @include grid(1fr, 400px auto, $s, $s);
+    margin: $s;
+    @include laptop {
+        @include grid(repeat(2, 1fr), auto, $s, $s);
+        max-width: $max;
+        margin: $l auto;
+    }
+        div.image-bg.about {
+            @include img-bg(url(../../../img/stockphotos/cookies.jpg));
+        }
+        div.flexis {
+            @include flex(column, center, center);
+            text-align: center;
+            margin: $l $sm;
+        }
+}

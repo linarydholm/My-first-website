@@ -1,0 +1,98 @@
+//global
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// fonts (text, link)
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-bottom: $s;
+    color: $dark-text;
+    text-align: center;
+}
+
+p, input, select, textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: $dark-text;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a.btn, label, input[type="submit"], button {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+// for headings
+.left-align {
+    text-align: left;
+}
+
+// lists
+ul {
+    list-style: none;
+}
+
+// buttons
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: $xs $m;
+    margin-top: $ml;
+    border-radius: 5px;
+    transition: $fast-transition;
+    background-color: transparent;
+    color: transparent;
+    border: 2px solid transparent;
+}
+
+.bulb-btn {
+    background-color: $light-text;
+    color: $dark-text;
+    border: 2px solid $light-text;
+}
+.bulb-btn:hover {
+    background-color: $light-bulb;
+    border: 2px solid $light-bulb;
+    box-shadow: $bulb-shadow;
+}
+
+.dark-btn {
+    background-color: $very-dark-green;
+    color: $light-text;
+    border: 2px solid $very-dark-green;
+        &:hover {
+            background-color: $light-green;
+            border: 2px solid $light-green;
+        }
+}
+
+.dark-outline-btn {
+    color: $very-dark-green;
+    border: 2px solid $very-dark-green;
+}
+.dark-outline-btn:hover {
+    background-color: $very-dark-green;
+    color: $light-text;
+}
+
+// for active link
+#active {
+    border-bottom: 1px solid $light-text;
+}

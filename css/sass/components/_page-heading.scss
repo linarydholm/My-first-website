@@ -1,0 +1,9 @@
+// page heading nest
+
+section.page-heading {
+    @include flex(row, center, center);
+    margin: $ml 0 calc($ml - $s) 0;
+        h1 {
+            font-size: 3em;
+        }
+}

@@ -1,0 +1,52 @@
+// header nest
+
+header {
+    section.announcement {
+        @include flex (row, center, center);
+        height: $announcement-height;
+        background-color: $light-green;
+            p {
+                color: $light-text;
+                font-size: 0.8em;
+            }
+    }
+
+    section.logo {
+        height: $header-height;
+        background-color: $very-dark-green;
+        color: $light-text;
+        z-index: 10;
+            a {
+                @include flex (row, center, center);
+                height: $header-height;
+                    img {
+                         max-height: 70%;
+                    }
+            }
+    }
+    
+    nav {
+        background-color: $light-green;
+            ul.nav {
+                @include flex (row, space-around, center, wrap);
+                height: $nav-height;
+                max-width: $max;
+                margin: 0 auto;
+                    li {
+                        a {
+                            color: $light-text;
+                            font-size: 0.8em;
+                            padding: $xxs 0;
+                            border: 1px solid transparent;
+                            transition: $fast-transition;
+                            @include tablet {
+                                font-size: 0.9em;
+                            }
+                        }
+                        a:hover {
+                            border-bottom: 1px solid $light-text;
+                        }
+                    }
+            }
+    }
+}

@@ -1,0 +1,73 @@
+// footer nest
+
+footer {
+    div.footer-container {
+        @include grid(1fr, repeat(4,auto), $s, $s);
+        background-color: $very-dark-green;
+        text-align: center;
+        padding: $m;
+            div.footer-item {
+                @include flex(row, center, center);
+                color: $light-text;
+            }
+            section.social-icons {
+                div.social-icon {
+                    margin: $m;
+                        a {
+                            @include flex(row, center, center);
+                            padding-left: 2.5px; // to center icons
+                            border: 1px solid $light-text;
+                            border-radius: 30px;
+                            width: 40px;
+                            height: 40px;
+                            color: $light-text;
+                            background-color: transparent;
+                            font-size: 1.5em;
+                            transition: $fast-transition;
+                        }
+                        a:hover {
+                            background-color: $light-text;
+                            color: $very-dark-green;
+                            border-radius: 5px;
+                        }
+                }
+            }
+            nav.quick-links {
+                ul {
+                    @include tablet {
+                        @include flex(row, center, center);
+                    }
+                    li {
+                        margin: $m;
+                        a {
+                            color: $light-text;
+                            border: 1px solid transparent;
+                            padding: $xxs 0;
+                            transition: $fast-transition;
+                            font-size: 0.9em;
+                        }
+                        a:hover {
+                            border-bottom: 1px solid $light-text;
+                        }
+                    }
+
+                }
+            }
+            section.logo {
+                div.footer-item {
+                    img {
+                        margin-top: $m;
+                        max-width: 148px;
+                    }
+                }
+            }
+            section.copyright {
+                div.footer-item {
+                    p {
+                        font-size: 0.7em;
+                        color: $light-text;
+                    }
+                }
+            }
+    }
+}
