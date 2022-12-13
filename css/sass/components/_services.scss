@@ -3,15 +3,15 @@
 section.services {
     margin: $m;
     div.service-grid {
-        @include grid(336px, repeat(5, 1fr), $m, $m);
+        @include grid(336px, repeat(5, auto), $m, $m);
         @include flex(column, center,center);
         margin: 0 auto;
         max-width: $bigmax;
         @include tablet {
-            @include grid(repeat(2, 336px), repeat(3, 1fr), $m, $m);
+            @include grid(repeat(2, 336px), repeat(3, auto), $m, $m);
         }
         @include desktop {
-            @include grid(repeat(3, 336px), repeat(2, 1fr), $m, $m);
+            @include grid(repeat(3, 336px), repeat(2, auto), $m, $m);
         }
             article.service-item {
                 padding: $s;
@@ -45,6 +45,13 @@ section.services {
                 div.service-text {
                     margin: $s;
                     text-align: center;
+                        p:last-of-type {
+                            box-shadow: $grey-shadow;
+                            background-color: $very-light-green;
+                            margin-top: $sm;
+                            padding: $s;
+                            border-radius: 5px;
+                        }
                 }
             }
     }

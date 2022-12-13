@@ -860,7 +860,7 @@ section.services {
 section.services div.service-grid {
   display: grid;
   grid-template-columns: 336px;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5, auto);
   row-gap: 24px;
   -moz-column-gap: 24px;
        column-gap: 24px;
@@ -876,7 +876,7 @@ section.services div.service-grid {
   section.services div.service-grid {
     display: grid;
     grid-template-columns: repeat(2, 336px);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     row-gap: 24px;
     -moz-column-gap: 24px;
          column-gap: 24px;
@@ -886,7 +886,7 @@ section.services div.service-grid {
   section.services div.service-grid {
     display: grid;
     grid-template-columns: repeat(3, 336px);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     row-gap: 24px;
     -moz-column-gap: 24px;
          column-gap: 24px;
@@ -939,4 +939,11 @@ section.services div.service-grid article.service-item:last-of-type div.service-
 section.services div.service-grid article.service-item div.service-text {
   margin: 12px;
   text-align: center;
+}
+section.services div.service-grid article.service-item div.service-text p:last-of-type {
+  box-shadow: 0px 0px 8px 0px rgb(195, 195, 195);
+  background-color: #F7F9F2;
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 5px;
 }/*# sourceMappingURL=index.css.map */
