@@ -19,6 +19,8 @@ header {
             a {
                 @include flex (row, center, center);
                 height: $header-height;
+                width: 250px;
+                margin: auto;
                     img {
                          max-height: 70%;
                     }
