@@ -27,19 +27,19 @@ section.services {
                         border-radius: 5px;
                     }
                     &:first-of-type div.service-img {
-                        @include img-bg(url(../../../img/stockphotos/wrap.jpg));
+                        @include img-bg(url(../img/stockphotos/wrap.jpg));
                     }
                     &:nth-of-type(2) div.service-img {
-                        @include img-bg(url(../../../img/stockphotos/decorate.jpg));
+                        @include img-bg(url(../img/stockphotos/decorate.jpg));
                     }
                     &:nth-of-type(3) div.service-img {
-                        @include img-bg(url(../../../img/stockphotos/giftshop.jpg));
+                        @include img-bg(url(../img/stockphotos/giftshop.jpg));
                     }
                     &:nth-of-type(4) div.service-img {
-                        @include img-bg(url(../../../img/stockphotos/dinner.jpg));
+                        @include img-bg(url(../img/stockphotos/dinner.jpg));
                     }
                     &:last-of-type div.service-img {
-                        @include img-bg(url(../../../img/stockphotos/cleaning.jpg));
+                        @include img-bg(url(../img/stockphotos/cleaning.jpg));
                     }
 
                 div.service-text {

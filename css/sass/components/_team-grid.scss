@@ -23,22 +23,22 @@ section.dream-team {
                         @include grid(262px auto, auto);
                     }
                         &:first-of-type .elf-portrait {
-                            @include img-bg(url(../../../img/stockphotos/santa.jpg));                        
+                            @include img-bg(url(../img/stockphotos/santa.jpg));                        
                         }
                         &:nth-of-type(2) .elf-portrait{
-                            @include img-bg(url(../../../img/stockphotos/elfie.jpg));
+                            @include img-bg(url(../img/stockphotos/elfie.jpg));
                         }
                         &:nth-of-type(3) .elf-portrait {
-                            @include img-bg(url(../../../img/stockphotos/elfwald.jpg));
+                            @include img-bg(url(../img/stockphotos/elfwald.jpg));
                         }
                         &:nth-of-type(4) .elf-portrait {
-                            @include img-bg(url(../../../img/stockphotos/gandelf.jpg));
+                            @include img-bg(url(../img/stockphotos/gandelf.jpg));
                         }
                         &:nth-of-type(5) .elf-portrait {
-                            @include img-bg(url(../../../img/stockphotos/elfa.jpg));
+                            @include img-bg(url(../img/stockphotos/elfa.jpg));
                         }
                         &:last-of-type .elf-portrait {
-                            @include img-bg(url(../../../img/stockphotos/rudelf.jpg));
+                            @include img-bg(url(../img/stockphotos/rudelf.jpg));
                         }
                         div.elf-portrait {
                             height: 250px;

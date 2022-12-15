@@ -3,7 +3,7 @@
 section.hero-banner {
     @include flex(row, center, center);
     @include position(relative);
-    @include img-bg(url(../../../img/stockphotos/banner.jpg));
+    @include img-bg(url(../img/stockphotos/banner.jpg));
     height: $banner-height;
         div.banner-text {
             @include flex(column, center, center);

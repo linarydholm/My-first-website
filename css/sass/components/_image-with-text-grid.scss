@@ -9,7 +9,7 @@ section.image-with-text-grid {
         margin: $l auto;
     }
         div.image-bg.about {
-            @include img-bg(url(../../../img/stockphotos/cookies.jpg));
+            @include img-bg(url(../img/stockphotos/cookies.jpg));
         }
         div.flexis {
             @include flex(column, center, center);
